@@ -15,9 +15,12 @@
     <div id="app">
         <div class="container">
             <button class="btn btn-primary" @click="generateMail()">Genera 10 indirizzi email</button>
-            <ul>
-                <li v-for="indirizzo in indirizzi">{{indirizzo}}</li>
-            </ul>
+            <div class="d-flex justify-content-center align-items-center">
+                <ul v-if="indirizzi.length===10">
+                    <li v-for="indirizzo in indirizzi">{{indirizzo}}</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
