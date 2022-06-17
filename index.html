@@ -19,6 +19,7 @@
                 <ul v-if="indirizzi.length===10">
                     <li v-for="indirizzo in indirizzi">{{indirizzo}}</li>
                 </ul>
+                <div v-else-if="indirizzi.length>0 && indirizzi.length<10">Sto generando gli indirizzi...</div>
             </div>
 
         </div>
